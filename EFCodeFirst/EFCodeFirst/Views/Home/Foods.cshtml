@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "Foods";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid pt-4">
+    <div class="row px-xl-5">
+        <div class="col-lg-2 col-md-12">
+            <div class="border-bottom mb-4 pb-4">
+                <div class="navbar-nav w-100 overflow-hidden">
+                    <h4 class="font-weight-semi-bold border-bottom pb-4 mb-4">Mutfaklar</h4>
+
+                    <div id="categoriesHtml">
+                        <div style='display:flex; align-items:flex-end; margin-bottom:10px'>
+                            <img style='width:80px;height:80px; border-radius:10px'
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpj7ruckNy0w6szJL9UStCvTK-dm44YjkEsCiZvn5PSCaNN9hnx1DpTm7kbVx7m1XhR54&usqp=CAU">
+                            <a style='margin-left:15px' href="/Home/Restaurants" class='nav-item nav-link'>
+                                <p class='font-weight-semi-bold mb-4' style='color:#6f6f6f; margin-top:-15px;font-size:17px'>
+                                    Tüm Restoranlar
+                                </p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-12">
+
+            <div class="row pb-5" id="foodHtml">
+                <input id="categoriesId" type="hidden" value="@Request.QueryString["Id"]" />
+
+            </div>
+
+        </div>
+        <div class="col-lg-2 col-md-12">
+            <div style="font-size: 17px;" class="border-bottom mb-4 pb-4">
+                <h3 class="font-weight-semi-bold border-bottom pb-4 mb-4">Filtreler</h3>
+                <h5 class="font-weight-semi-bold mb-4">Fiyata Göre </h5>
+                <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                    <input checked type="checkbox" class="custom-control-input" id="price-all">
+                    <label class="custom-control-label" for="price-all">Tüm Fiyatlar</label>
+                </div>
+                <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                    <input type="checkbox" class="custom-control-input" id="price-1" value="0" value2="50">
+                    <label class="custom-control-label" for="price-1">0₺ - 50₺ arası</label>
+                </div>
+                <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                    <input type="checkbox" class="custom-control-input" id="price-2" value="50" value2="100">
+                    <label class="custom-control-label" for="price-2">50₺ - 100₺ arası</label>
+                </div>
+                <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                    <input type="checkbox" class="custom-control-input" id="price-3" value="100" value2="150">
+                    <label class="custom-control-label" for="price-3">100₺ - 150₺ arası</label>
+                </div>
+                <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                    <input type="checkbox" class="custom-control-input" id="price-4" value="150" value2="200">
+                    <label class="custom-control-label" for="price-4">150₺ - 200₺ arası</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Assets/js/javascript/foods.js"></script>

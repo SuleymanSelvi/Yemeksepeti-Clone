@@ -1,0 +1,11 @@
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Models\bin\Debug\YemekSepeti.Models.dll.config
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Models\bin\Debug\YemekSepeti.Models.dll
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Models\bin\Debug\YemekSepeti.Models.pdb
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Models\bin\Debug\EntityFramework.dll
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Models\bin\Debug\EntityFramework.xml
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Models\obj\Debug\YemekSepeti.Models.csproj.CoreCompileInputs.cache
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Models\obj\Debug\YemekSepeti.Models.csproj.CopyComplete
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Models\obj\Debug\YemekSepeti.Models.dll
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Models\obj\Debug\YemekSepeti.Models.pdb

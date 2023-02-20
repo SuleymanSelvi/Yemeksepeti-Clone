@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "Restaurants";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid pt-4">
+    <div class="row px-xl-5">
+        <!-- Shop Sidebar Start -->
+        <div class="col-lg-2 col-md-12">
+            <!-- Price Start -->
+            @*<div class="col-lg-3 d-none d-lg-block">
+                    <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                        <h6 class="m-0">Categories</h6>
+                        <i class="fa fa-angle-down text-dark"></i>
+                    </a>
+                    <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
+                        <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+                            <a href="" class="nav-item nav-link">Shirts</a>
+                            <a href="" class="nav-item nav-link">Jeans</a>
+                            <a href="" class="nav-item nav-link">Jackets</a>
+                            <a href="" class="nav-item nav-link">Shoes</a>
+                        </div>
+                    </nav>
+                </div>*@
+            <div class="border-bottom mb-4 pb-4">
+                <div class="navbar-nav w-100 overflow-hidden">
+                    <h3 class="font-weight-semi-bold border-bottom pb-4 mb-4">Mutfaklar</h3>
+
+                    <div id="categoriesHtml">
+                        <div style='display:flex; align-items:flex-end; margin-bottom:10px'>
+                            <img style='width:80px;height:80px; border-radius:10px'
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpj7ruckNy0w6szJL9UStCvTK-dm44YjkEsCiZvn5PSCaNN9hnx1DpTm7kbVx7m1XhR54&usqp=CAU">
+                            <a style='margin-left:15px' href="/Home/Restaurants/" class='nav-item nav-link'>
+                                <p class='font-weight-semi-bold mb-4' style='color:#6f6f6f; margin-top:-15px;font-size:17px'>
+                                    Tüm Restoranlar
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-12">
+
+            <div class="row pb-5" id="restaurantHtml">
+
+            </div>
+
+            <div class="row pb-5" id="searchFoodHtml">
+
+            </div>
+
+        </div>
+        <div class="col-lg-2 col-md-12">
+            <div style="font-size: 17px;" class="border-bottom mb-4 pb-4">
+                <h3 class="font-weight-semi-bold border-bottom pb-4 mb-4">Filtreler</h3>
+                <h5 class="font-weight-semi-bold mb-4">Fiyata Göre </h5>
+                <form>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input" checked id="price-all">
+                        <label class="custom-control-label" for="price-all">Tüm Fiyatlar</label>
+                        @*<span class="badge border font-weight-normal">1000</span>*@
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input" id="price-1">
+                        <label class="custom-control-label" for="price-1">0₺ - 50₺</label>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input" id="price-2">
+                        <label class="custom-control-label" for="price-2">50₺ - 100₺</label>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input" id="price-2">
+                        <label class="custom-control-label" for="price-2">100₺ - 150₺</label>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input" id="price-2">
+                        <label class="custom-control-label" for="price-2">150₺ - 200₺</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Assets/js/javascript/restaurants.js"></script>

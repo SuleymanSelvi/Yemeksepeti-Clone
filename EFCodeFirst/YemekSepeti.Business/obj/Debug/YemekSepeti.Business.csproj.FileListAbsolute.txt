@@ -1,0 +1,15 @@
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Business\obj\Debug\YemekSepeti.Business.csproj.AssemblyReference.cache
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Business\obj\Debug\YemekSepeti.Business.csproj.CoreCompileInputs.cache
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Business\bin\Debug\YemekSepeti.Business.dll.config
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Business\bin\Debug\YemekSepeti.Business.dll
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Business\bin\Debug\YemekSepeti.Business.pdb
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Business\bin\Debug\EntityFramework.dll
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Business\bin\Debug\EntityFramework.SqlServer.dll
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Business\bin\Debug\YemekSepeti.Models.dll
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Business\bin\Debug\YemekSepeti.Models.pdb
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Business\bin\Debug\YemekSepeti.Models.dll.config
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Business\bin\Debug\EntityFramework.xml
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Business\bin\Debug\EntityFramework.SqlServer.xml
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Business\obj\Debug\YemekSepeti.Business.csproj.CopyComplete
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Business\obj\Debug\YemekSepeti.Business.dll
+D:\Onur (Okul)\MVC\EFCodeFirst\YemekSepeti.Business\obj\Debug\YemekSepeti.Business.pdb

@@ -1,0 +1,168 @@
+﻿@*@model EFCodeFirst.AllDTO*@
+@model YemekSepeti.Models.DTO.AllDTO
+
+@{
+    ViewBag.Title = "AdminPanel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body>
+    <div style="background-image: url('https://as1.ftcdn.net/v2/jpg/02/97/67/70/1000_F_297677001_zX7ZzRq8DObUV5IWTHAIhAae6DuiEQh4.jpg'); width: 100%;" class="container-fluid bg-secondary mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px;">
+            <h1 style="color:white;margin-top:180px" class="font-weight-semi-bold text-uppercase mb-3">KATEGORİ - RESTORAN - YEMEK</h1>
+        </div>
+    </div>
+    <div style="margin-top:-40px" class="container-fluid pt-5">
+        <div class="row px-xl-5">
+            <div class="col-lg-6 mb-5">
+                <div class="contact-form">
+                    <div class="text-center mb-4">
+                        <h3 class="section-title px-5"><span class="px-2">Kategori Ekle</span></h3>
+                    </div>
+                    <div novalidate="novalidate">
+                        <div class="control-group">
+                            <p>
+                                İsim
+                                <input type="text" class="form-control" id="categoryName" data-validation-required-message="Please enter your name" />
+                            </p>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <p>
+                                Resim
+                                <input type="file" class="form-control" id="categoryImages" data-validation-required-message="Please enter your email" />
+                            </p>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary py-2 px-4 upload-category" type="submit">Ekle</button>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div style="margin-top:20px" class="contact-form">
+                    <div class="text-center mb-4">
+                        <h3 class="section-title px-5"><span class="px-2">Restoran Ekle</span></h3>
+                    </div>
+                    <div>
+                        <div class="control-group">
+                            <div class="control-group">
+                                <p>
+                                    Kategori
+                                    <div class="form-control">
+                                        @Html.DropDownList("restaurantCategoryId", Model.CategoriesDTODropDownList.Select(x => new SelectListItem { Text = x.CategoriesName, Value = x.Id.ToString() }).ToList())
+                                    </div>
+                                </p>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <p>
+                                İsim
+                                <input type="text" class="form-control" id="restaurantName" />
+                            </p>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <p>
+                                Şifre
+                                <input type="text" class="form-control" id="restaurantPassword" />
+                            </p>
+                            <p class="help-block text-danger"></p>
+                        </div><div class="control-group">
+                            <p>
+                                Konum
+                                <input type="text" class="form-control" id="restaurantLocation" />
+                            </p>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <p>
+                                Logo
+                                <input type="file" class="form-control" id="restaurantLogo" />
+                            </p>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary py-2 px-4 upload-restaurant" type="submit">Ekle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-5">
+                <div class="contact-form">
+                    <div class="text-center mb-4">
+                        <h3 class="section-title px-5"><span class="px-2">Yemek Ekle</span></h3>
+                    </div>
+                    <div>
+                        <div class="control-group">
+                            <p>
+                                Kategori
+                                <div class="form-control">
+                                    @Html.DropDownList("foodCategoryId", Model.CategoriesDTODropDownList.Select(x => new SelectListItem { Text = x.CategoriesName, Value = x.Id.ToString() }).ToList())
+                                </div>
+
+                            </p>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <p>
+                                Restoran
+                                <div class="form-control">
+                                    @Html.DropDownList("foodRestaurantId", Model.RestaurantsDTODropDownList.Select(x => new SelectListItem { Text = x.Name, Value = x.Id.ToString() }).ToList())
+                                </div>
+
+                            </p>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <p>
+                                İsmi
+                                <input type="text" class="form-control" id="foodName" @*required="required" data-validation-required-message="Please enter your name"*@ />
+                            </p>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <p>
+                                Fiyatı
+                                <input type="text" class="form-control" id="foodPrice" />
+                            </p>
+                            <p class="help-block text-danger"></p>
+                        </div><div class="control-group">
+                            <p>
+                                Açıklaması
+                                <input type="text" class="form-control" id="foodDescription" />
+                            </p>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <p>
+                                Resim
+                                <input type="file" class="form-control" id="foodImages" />
+                            </p>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        @*<div class="control-group">
+                                <p>
+                                    Kategori İd
+                                    <input type="text" class="form-control" id="foodCategoryId" />
+                                </p>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <p>
+                                    Restoran İd
+                                    <input type="text" class="form-control" id="foodRestaurantId" />
+                                </p>
+                                <p class="help-block text-danger"></p>
+                            </div>*@
+                        <div>
+                            <button class="btn btn-primary py-2 px-4 upload-food" type="submit">Ekle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="~/Assets/js/javascript/adminPanel.js"></script>
+
