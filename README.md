@@ -5,6 +5,7 @@
 * ASP.Net MVC
 * HTML
 * CSS
+* JavaScript
 * jQuery
 * MSSQL
 
