@@ -1,4 +1,17 @@
-# Yemeksepeti-Clone
+> ## *Projede kullanılan yazılım dilleri ve teknolojileri*
+---
+
+* C#
+* ASP.Net MVC
+* HTML
+* CSS
+* jQuery
+* MSSQL
+
+<br>
+
+ > ## *Projeden görüntüler*
+---
 
 ![1](https://user-images.githubusercontent.com/125551881/220125908-c1e76cb2-5667-471e-b05e-77dc252c9375.png)
 ![6](https://user-images.githubusercontent.com/125551881/220125919-7aa506ba-e030-46e5-a275-c6fc5fab3f1e.png)
