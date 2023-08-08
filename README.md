@@ -2,7 +2,7 @@
 ---
 
 * C#
-* ASP.Net MVC
+* ASP.Net Core MVC
 * HTML
 * CSS
 * JavaScript
